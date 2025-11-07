@@ -6,9 +6,9 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/YOUR_GITHUB_USERNAME?tab=followers"><img src="https://img.shields.io/github/followers/YOUR_GITHUB_USERNAME?style=flat&label=Followers"/></a>
-  <img src="https://komarev.com/ghpvc/?username=YOUR_GITHUB_USERNAME&style=flat&label=Profile+Views"/>
-  <a href="mailto:your.email@example.com"><img src="https://img.shields.io/badge/Email-Contact-blue"/></a>
+  <a href="https://github.com/ishaqahnafkhan001?tab=followers"><img src="https://img.shields.io/github/followers/YOUR_GITHUB_USERNAME?style=flat&label=Followers"/></a>
+  <img src="https://komarev.com/ghpvc/?username=ishaqahnafkhan001&style=flat&label=Profile+Views"/>
+  <a href="mailto:ishaq.ahnaf.khan@g.bracu.ac.bd"><img src="https://img.shields.io/badge/Email-Contact-blue"/></a>
   <a href="https://www.linkedin.com/in/YOUR_LINKEDIN/"><img src="https://img.shields.io/badge/LinkedIn-Connect-informational"/></a>
 </p>
 
@@ -44,14 +44,14 @@
 - **Full-stack app:** React + Tailwind frontend, Node/Express API, JSON storage or Postgres  
 - **Data viz:** Jupyter/Matplotlib dashboards, exportable reports
 
-> Want proof instead of promises? Scroll down and click the collapsibles.
+> Want proof instead of promises? Open the collapsibles.
 
 ---
 
 <details>
   <summary><b>📦 Minimal API: Express + JSON (click to expand)</b></summary>
 
-
+```js
 // server.js — dead simple API that you can deploy on Vercel/Render
 import express from "express";
 import fs from "fs";
@@ -74,7 +74,9 @@ app.post("/api/notes", (req, res) => {
 
 app.listen(3000, () => console.log("API on http://localhost:3000"));
 
-<summary><b>📦 Minimal API: Express + JSON (click to expand)</b></summary>
+
+
+</details> <details> <summary><b>🧪 Tiny ML example: train & persist (click to expand)</b></summary>
 
 # train.py — quick baseline with scikit-learn
 import pandas as pd
@@ -92,4 +94,3 @@ clf = LogisticRegression(max_iter=1000).fit(X_tr, y_tr)
 print("Accuracy:", round(accuracy_score(y_te, clf.predict(X_te)), 4))
 
 joblib.dump(clf, "model.joblib")
-
