@@ -51,7 +51,7 @@
 <details>
   <summary><b>📦 Minimal API: Express + JSON (click to expand)</b></summary>
 
-```js
+
 // server.js — dead simple API that you can deploy on Vercel/Render
 import express from "express";
 import fs from "fs";
@@ -74,6 +74,7 @@ app.post("/api/notes", (req, res) => {
 
 app.listen(3000, () => console.log("API on http://localhost:3000"));
 
+<summary><b>📦 Minimal API: Express + JSON (click to expand)</b></summary>
 
 # train.py — quick baseline with scikit-learn
 import pandas as pd
