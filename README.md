@@ -73,7 +73,7 @@ app.post("/api/notes", (req, res) => {
 });
 
 app.listen(3000, () => console.log("API on http://localhost:3000"));
-
+```
 
 
 </details> <details> <summary><b>🧪 Tiny ML example: train & persist (click to expand)</b></summary>
