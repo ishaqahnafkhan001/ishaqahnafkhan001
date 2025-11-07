@@ -73,3 +73,22 @@ app.post("/api/notes", (req, res) => {
 });
 
 app.listen(3000, () => console.log("API on http://localhost:3000"));
+
+
+# train.py — quick baseline with scikit-learn
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
+from sklearn.linear_model import LogisticRegression
+import joblib
+
+df = pd.read_csv("data.csv")  # assumes a target column named 'y'
+X = df.drop(columns=["y"])
+y = df["y"]
+
+X_tr, X_te, y_tr, y_te = train_test_split(X, y, test_size=0.2, random_state=42)
+clf = LogisticRegression(max_iter=1000).fit(X_tr, y_tr)
+print("Accuracy:", round(accuracy_score(y_te, clf.predict(X_te)), 4))
+
+joblib.dump(clf, "model.joblib")
+
